@@ -2,13 +2,13 @@
 
 
 
-user_name = input("Who are we baking for today? ")
+user_name = input("Who are we baking for today? ") #User input that is requiered for the parameter
 
-def bakery_options(user_name):
+def bakery_options(user_name):   # The function with the parameter that rewuired user input
     yessir = input(f"\nWelcome to the Bakery, {user_name}! Would you like to order? (yes/no): ")
     
-    order_list = []
-    total_cost = []
+    order_list = [] # List number 1 that is going to be motified later in the code
+    total_cost = [] # Second list that get modified and changed throughout the code
     
     while yessir.lower() == 'yes':
         sweets = ["1. Cookies", "2. Cinnamon Rolls", "3. Macarons"]
